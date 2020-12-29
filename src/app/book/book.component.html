@@ -1,0 +1,22 @@
+<div class="book">
+    <h3>Book Finder App</h3>
+
+    <form class="form-inline" >
+        
+        <div class="form-group mx-sm-3 mb-2">
+          <label for="inputPassword2" class="sr-only">Password</label>
+          <input type="text"   class="form-control" id="books" >
+        </div>
+        <button type="submit" (click)='searchbook()' class="btn btn-primary mb-2">search</button>
+      </form>
+
+      <div class="card" *ngFor='let book of alldata'>
+        <div class="card-header">
+        <p > {{book.volumeInfo.title}}</p>
+        </div>
+       
+      </div>
+</div>
+
+<!-- (click)='searchbook' -->
+<!--  [(ngModel)]='title' -->

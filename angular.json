@@ -88,9 +88,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+             
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.js"]
           }
         },
         "lint": {
@@ -119,6 +121,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "myapp2"
+    }
+  },
+  "defaultProject": "myapp2",
+  "cli": {
+    "analytics": "9255eed1-8eb0-4c99-8efc-5ca83574581b"
+  }
 }
